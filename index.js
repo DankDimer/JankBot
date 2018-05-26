@@ -5,8 +5,11 @@ bot.login("NDUwMDM2Mjc0MjQ2NDUxMjIx.DetYxw.XwEk8MUqQi7YAXaVq1NPI0GrksU");
 bot.on('ready', () => {
 
   })
-bot.on("ready", function() {
-    console.log("JankBot is ready!");
+  client.on("ready", () => {
+ 
+    console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+  
+    client.user.setActivity(`with fire.`);
 
 });
 
