@@ -23,7 +23,7 @@ bot.on("message", message => {
     if (message.content === "DankDimer sucks.") {
         message.reply("Fuck you.");
     }
-    if (message.content === "DankDimer is cool") {
+    if (message.content === "DankDimer is cool.") {
         message.reply("True.");
     }
     if (message.content === "Knoddy sucks.") {
