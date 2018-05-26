@@ -16,4 +16,7 @@ bot.on("message", message => {
             }
             break;
     }
+    if (message.content === "kill me") {
+        message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
+    }
 })
