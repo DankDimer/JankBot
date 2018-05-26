@@ -11,4 +11,10 @@ bot.on("message", message => {
     if (message.content === "kill me") {
         message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
     }
+    if (message.content === "this server sucks") {
+        message.reply("And you swallow, dipshit.");
+    }
+    if (message.content === "daddy") {
+        message.reply("I'm daddy you fool.");
+    }
 })
