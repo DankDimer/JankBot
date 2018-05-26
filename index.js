@@ -5,7 +5,7 @@ bot.login("NDUwMDM2Mjc0MjQ2NDUxMjIx.DetYxw.XwEk8MUqQi7YAXaVq1NPI0GrksU");
 
 bot.on("ready", function() {
     console.log("JankBot is ready!");
-    bot.setActivity("with fire.")
+    client.user.setActivity(`with fire.`);
 });
 
 bot.on("message", message => {
