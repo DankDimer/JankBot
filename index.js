@@ -32,35 +32,7 @@ bot.on("message", message => {
     if (message.content === "Knoddy sucks.") {
         message.reply("Fuck you.");
     }
-    if (message.content === "spam") {
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed")
-        channel.sendMessage("spammed");
+    if (message.content === "help") {
+        message.reply("JankBot is currently in development. This command was not fully added yet.")
     }
 })
