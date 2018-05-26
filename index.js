@@ -98,7 +98,7 @@ if(command === "help") {
 
   message.channel.send("JankBot is currently in development.")
 }
-if (command === "killme") { 
+if(message.content === "kill me") { 
 
     message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
 }
