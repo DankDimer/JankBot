@@ -7,6 +7,9 @@ bot.on('ready', () => {
   })
 bot.on("ready", function() {
     console.log("JankBot is ready!");
+    bot.on('ready', () => {
+        bot.user.setGame('with fire.')
+      })
 });
 
 bot.on("message", message => {
