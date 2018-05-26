@@ -2,19 +2,24 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 bot.login("NDUwMDM2Mjc0MjQ2NDUxMjIx.DetYxw.XwEk8MUqQi7YAXaVq1NPI0GrksU");
-client.on("ready", () => {
- 
-    console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  
-    client.user.setActivity(`Visual Studio Code`);
-  
-  });
+bot.on('ready', () => {
+
+  })
 bot.on("ready", function() {
     console.log("JankBot is ready!");
 
 });
 
-bot.on("message", message => {
+client.on("message", async message => {
+
+    if(message.author.bot) return;
+    
+  
+    if(message.content.indexOf(config.prefix) .== 0) return;
+    
+  
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
     if (message.content === "kill me") {
         message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
     }
@@ -37,6 +42,6 @@ bot.on("message", message => {
         message.reply("Fuck you.");
     }
     if (message.content === "help") {
-        message.reply("JankBot is currently in development. This command was not fully added yet.")
+        message.reply("JankBot is currently in development. This command was not fully added.")
     }
 })
