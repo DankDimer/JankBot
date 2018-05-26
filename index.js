@@ -8,14 +8,6 @@ bot.on("ready", function() {
 });
 
 bot.on("message", message => {
-    var args = message.content.substring(prefix.length).split(" ");
-    switch (args[0].toLowerCase()) {
-        case "kick":
-            if (!args[1]) {
-                message.reply("You need argument: `name`")
-            }
-            break;
-    }
     if (message.content === "kill me") {
         message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
     }
