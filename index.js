@@ -17,4 +17,5 @@ bot.on("message", message => {
     if (message.content === "daddy") {
         message.reply("I'm daddy you fool.");
     }
+    message.reply("wasdwasdwasdwasdwasdwasdwasdwasd");
 })
