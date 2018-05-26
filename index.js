@@ -32,4 +32,30 @@ bot.on("message", message => {
     if (message.content === "Knoddy sucks.") {
         message.reply("Fuck you.");
     }
+    if (message.content === "spam") {
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".")
+        message.reply(".");
+    }
 })
