@@ -1,4 +1,4 @@
-const Discord = requre("discord.js");
+const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 bot.login("NDUwMDM2Mjc0MjQ2NDUxMjIx.DetYxw.XwEk8MUqQi7YAXaVq1NPI0GrksU");
