@@ -9,6 +9,6 @@ bot.on("ready", function() {
 
 bot.on("message", message => {
     if (message.content === "kill me") {
-        message.reply("Here are the nearest bridges:");
+        message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
     }
 })
