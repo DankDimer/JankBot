@@ -8,7 +8,12 @@ bot.on("ready", function() {
 });
 
 bot.on("message", message => {
-    if (message.content === "kill me") {
-        message.reply("Here are the nearest bridges:");
+    var args = message.content.substring(prefix.length).split(" ");
+    switch (args[0].toLowerCase()) {
+        case "kick":
+            if (!args[1]) {
+                message.reply("You need argument: `name`")
+            }
+            break;
     }
 })
