@@ -17,4 +17,16 @@ bot.on("message", message => {
     if (message.content === "daddy") {
         message.reply("I'm daddy you fool.");
     }
+    if (message.content === "Knoddy is cool.") {
+        message.reply("True.");
+    }
+    if (message.content === "DankDimer sucks.") {
+        message.reply("Fuck you.");
+    }
+    if (message.content === "DankDimer is cool") {
+        message.reply("True.");
+    }
+    if (message.content === "Knoddy sucks.") {
+        message.reply("Fuck you.");
+    }
 })
