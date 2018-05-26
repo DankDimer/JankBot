@@ -3,13 +3,11 @@ const bot = new Discord.Client();
 
 bot.login("NDUwMDM2Mjc0MjQ2NDUxMjIx.DetYxw.XwEk8MUqQi7YAXaVq1NPI0GrksU");
 bot.on('ready', () => {
-    client.user.setGame('GAME HERE')
+
   })
 bot.on("ready", function() {
     console.log("JankBot is ready!");
-    bot.on('ready', () => {
-        bot.user.setGame('with fire.')
-      })
+
 });
 
 bot.on("message", message => {
