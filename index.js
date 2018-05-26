@@ -5,9 +5,8 @@ bot.login("NDUwMDM2Mjc0MjQ2NDUxMjIx.DetYxw.XwEk8MUqQi7YAXaVq1NPI0GrksU");
 
 bot.on("ready", function() {
     console.log("JankBot is ready!");
-    client.user.setActivity(`with fire.`);
 });
-
+client.user.setActivity(`with fire.`);
 bot.on("message", message => {
     if (message.content === "kill me") {
         message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
