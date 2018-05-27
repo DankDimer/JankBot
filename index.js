@@ -36,13 +36,6 @@ client.on("message", async message => {
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
-  if(message.content.startsWith(config.prefix + "prefix")) {
-    let newPrefix = message.content.split(" ").slice(1, 2)[0];
-    config.prefix = newPrefix;
-  ​
-    // Now we have to save the file.
-    fs.writeFile("./config.json", JSON.stringify(config), (err) => console.error);
-  }
   if(command === "say") {
 
     const sayMessage = args.join(" ");
