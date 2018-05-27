@@ -100,7 +100,7 @@ if(command === "help") {
 }
 if(message.command === "killme") { 
 
-    message.reply("Here are the nearest bridges: https://www.google.com/maps/search/bridge/");
+    message.channel.send("Here are the nearest bridges: https://www.google.com/maps/search/bridge/")
 }
 });
 
