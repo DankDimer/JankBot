@@ -99,7 +99,7 @@ if(command === "help") {
 
   message.channel.send("JankBot is currently in development.")
 }
-if(message.command === "killme") { 
+if(command === "killme") { 
 
     message.channel.send("Here are the nearest bridges: https://www.google.com/maps/search/bridge/")
 }
