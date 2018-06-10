@@ -95,9 +95,15 @@ client.on("message", async message => {
   }
 
   
+if(command === "info") {
+
+  message.channel.send("JankBot is currently in development.It's developers are DankDimer#2285 and")
+}
+
+
 if(command === "help") {
 
-  message.channel.send("JankBot is currently in development.")
+  message.reply("You have been sent help in a DM. If you did not recieve the message, please make sure you have DMs enabled. If it still doesn't work, please contact DankDimer#2285 or TheCow#8526 via DM.")
 }
 if(command === "killme") { 
 
