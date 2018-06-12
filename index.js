@@ -109,10 +109,7 @@ if(command === "killme") {
 
     message.channel.send("Here are the nearest bridges: https://www.google.com/maps/search/bridge/")
 }
-if(command === "givemeperms") {
 
-  user.roles("-Head Administrator-")
-}
 });
 
 
