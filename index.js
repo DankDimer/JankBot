@@ -109,6 +109,63 @@ if(command === "killme") {
 
     message.channel.send("Here are the nearest bridges: https://www.google.com/maps/search/bridge/")
 }
+if(command === "testrep") {
+  const n = await message.channel.send("Format: User, Reason, Proof.");
+
+  m.edit(`${user} was reported.`)
+}
+if(cmd === "serverinfo"){
+
+  let sicon = message.guild.iconURL;
+  let serverembed = new Discord.RichEmbed()
+  .setDescription("Server Information")
+  .setColor("#15f153")
+  .setThumbnail(sicon)
+  .addField("Server Name", message.guild.name)
+  .addField("Created On", message.guild.createdAt)
+  .addField("You Joined", message.member.joinedAt)
+  .addField("Total Members", message.guild.memberCount);
+
+  return message.channel.send(serverembed);
+}
+if(cmd === "botinfo") {
+
+  let bicon = bot.user.displayAvatarURL;
+  let botembed = new Discord.RichEmbed()
+  .setDescription("Bot Information")
+  .setColor("#15f153")
+  .setThumbnail(bicon)
+  .addField("Bot Name", bot.user.username)
+  .addField("Created On", bot.user.createdAt);
+
+  return message.channel.send(botembed);
+}
+if(cmd === "report"){
+
+  //!report @ned this is the reason
+
+  let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+  if(!rUser) return message.channel.send("Couldn't find user.");
+  let rreason = args.join(" ").slice(22);
+
+  let reportEmbed = new Discord.RichEmbed()
+  .setDescription("Reports")
+  .setColor("#15f153")
+  .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
+  .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
+  .addField("Channel", message.channel)
+  .addField("Time", message.createdAt)
+  .addField("Reason", rreason);
+
+  let reportschannel = message.guild.channels.find(`name`, "reports");
+  if(!reportschannel) return message.channel.send("Couldn't find reports channel.");
+
+
+  message.delete().catch(O_o=>{});
+  reportschannel.send(reportEmbed);
+
+  return;
+}
 
 });
 
