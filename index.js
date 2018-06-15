@@ -128,7 +128,7 @@ if(cmd === "serverinfo"){
 
   return message.channel.send(serverembed);
 }
-if(cmd === "botinfo") {
+if(command === "botinfo") {
 
   let bicon = bot.user.displayAvatarURL;
   let botembed = new Discord.RichEmbed()
